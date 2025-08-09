@@ -3,10 +3,10 @@
 
 Easy-to-learn Python, R, and Markdown tutorials to help you get started quickly.
 
-##MarkDown使用
+## MarkDown使用
 
-##Python
+## Python
 
-##R
+## R
 
-##一些代码
+## 一些代码
