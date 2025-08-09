@@ -5,6 +5,9 @@ Easy-to-learn Python, R, and Markdown tutorials to help you get started quickly.
 
 ## MarkDown使用
 
+### Markdown使用方法 [Markdown Usage](https://github.com/MoyeeHo/Learning-materials/blob/main/Markdown)
+
+
 ## Python
 
 ## R
