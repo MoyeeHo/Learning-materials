@@ -1,4 +1,4 @@
-在github仓库上通常会看到别人使用‘README.md’备注文件，‘.md’后缀就为Markdown格式的文件。
-Markdown是一种标记语言，使用目的是让文本编辑更简洁高效，同时保证内容可读性和转换性。它用简单的标记符号代替复杂的排版格式，语法简洁直观。
+在GitHub仓库中，我们常会看到名为`README.md`的说明文件，其中，`.md`后缀代表这是Markdown格式的文件。
 
-github上也有训练营，可自行观看，本文是我自己对于Markdown的学习理解结果。
+Markdown是一种轻量级标记语言，其设计出众是让文本编辑更简洁高效，同时兼顾内容的可读性与格式转换的灵活性。它用简单直观的标记符号代替复杂的排版代码，语法简洁易懂，即便非专业人士也能快速上手。
+GitHub上其实也有相关的[入门训练营](https://www.github-zh.com/getting-started/communicate-using-markdown)可供自学，而本文则是我基于自身学习体验整理的Markdown理解与总结。
