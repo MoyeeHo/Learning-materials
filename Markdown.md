@@ -8,9 +8,9 @@ GitHub上其实也有相关的[入门训练营](https://www.github-zh.com/gettin
 
 预览效果及用法↓
 # Heading level 1
-  \# Heading level 1
+  `\# Heading level 1
 
-  `Heading level 1
+  Heading level 1
 ===============`
 ## Heading level 2
   \## Heading level 2
