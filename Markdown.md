@@ -5,12 +5,18 @@ GitHub上其实也有相关的[入门训练营](https://www.github-zh.com/gettin
 
 ## 1 标题使用
 创建标题前，需要在文字前加`#`，`#`得多少取决于用在几号标题。
-|  语法   |     |     |
-| --- | --- | --- |
-|  # Heading level 1   |     |     |
-|     |     |     |
-|     |     |     |
-|     |     |     |
-|     |     |     |
-|     |     |     |
-<h1>Heading level 1</h1>
+|  语法   |  预览效果   |
+| --- | --- |
+|  # Heading level 1   |      |
+|     |     |
+|     |     |
+|     |     |
+|     |     |
+|     |     |
+
+# Heading level 1
+## Heading level 2
+### Heading level 3
+#### Heading level 4
+##### Heading level 5
+###### Heading level 6
