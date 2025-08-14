@@ -131,14 +131,75 @@ Markdown换行方法
 ```
 1. 有序list 1
 2. 有序list 2
-    2.1. 有序list 2.1
-    2.2. 有序list 2.2
+    1. 有序list 2.1
+    2. 有序list 2.2
 3. 有序list 3
 ```
 
 预览效果：  
 1. 有序list 1
 2. 有序list 2
-    2.1. 有序list 2.1
-    2.2. 有序list 2.2
+    1. 有序list 2.1
+    2. 有序list 2.2
 3. 有序list 3
+
+**在列表中嵌套其他元素**
+
+**段落**
+
+```
+- This is the first list item.
+- Here's the second list item.
+  I need to add another paragraph below the second list item.
+- And here's the third list item.
+```
+
+预览效果：  
+- This is the first list item.
+- Here's the second list item.
+  
+  I need to add another paragraph below the second list item.
+- And here's the third list item.
+
+**引用块**
+```
+- This is the first list item.
+- Here's the second list item.
+  > A blockquote would look great below the second list item.
+- And here's the third list item.
+```
+
+预览效果：  
+- This is the first list item.
+- Here's the second list item.
+  > A blockquote would look great below the second list item.
+- And here's the third list item.
+
+**列表**
+```
+1. First item
+2. Second item
+3. Third item
+    - Indented item
+    - Indented item
+4. Fourth item
+```
+预览效果：  
+1. First item
+2. Second item
+3. Third item
+    - Indented item
+    - Indented item
+4. Fourth item
+
+> 2025年8月14日，由于还没学到代码块和插入图片，因此稍后更新。
+
+**代码块**
+
+**图片**
+
+
+
+
+## 6 
+
