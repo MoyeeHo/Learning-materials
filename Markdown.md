@@ -193,13 +193,55 @@ Markdown换行方法
 4. Fourth item
 
 > 2025年8月14日，由于还没学到代码块和插入图片，因此稍后更新。
+>
+> 2025年8月18日：代码块内容更新，建议先学习**[6 代码块](#6-代码块)**章节，再继续后续内容。
 
 **代码块**
+
+代码块通常采用四个空格或一个制表符缩进。当他们被放入列表里时，请将他们缩进八个空格、两个制表符或用围栏代码块。
+~~~
+1. Open the file.
+2. Find the following code block on line 20:
+   ```python
+     def main():
+       print('Hello world!')
+   ```
+3. Update the title to match the name of your website.
+~~~
+
+预览效果：   
+1. Open the file.
+2. Find the following code block on line 20:
+   ```python
+     def main():
+       print('Hello world!')
+   ```
+3. Update the title to match the name of your website.
 
 **图片**
 
 
 
+## 6 代码块
+Markdown支持两种类型代码块：1、行内代码，使用一个反引号包裹代码内容 \` ；2、围栏代码块，使用三个反引号```或波浪号~~~包裹多行代码。
 
-## 6 
+1. 行内代码块
+```
+`Hello` World!
+```
+预览效果：
+`Hello` World!
+
+2.围栏代码块
+~~~
+```python
+  def main():
+    print('hello world!')
+```
+~~~
+预览效果：
+```python
+  def main():
+    print('hello world!')
+```
 
