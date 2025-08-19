@@ -194,7 +194,7 @@ Markdown换行方法
 
 > 2025年8月14日，由于还没学到代码块和插入图片，因此稍后更新。
 >
-> 2025年8月18日：代码块内容更新，建议先学习**[6 代码块](#6-代码块)**章节，再继续后续内容。
+> 2025年8月18日：代码块内容更新，建议先学习**[6 代码块](https://github.com/MoyeeHo/Learning-materials/edit/main/Markdown.md#6-%E4%BB%A3%E7%A0%81%E5%9D%97)**章节，再继续后续内容。
 
 **代码块**
 
@@ -223,7 +223,9 @@ Markdown换行方法
 
 
 ## 6 代码块
-Markdown支持两种类型代码块：1、行内代码，使用一个反引号包裹代码内容 \` ；2、围栏代码块，使用三个反引号```或波浪号~~~包裹多行代码。
+Markdown支持两种类型代码块：  
+1、行内代码，使用一个反引号包裹代码内容 \` ；  
+2、围栏代码块，使用三个反引号```或波浪号~~~包裹多行代码。
 
 1. 行内代码块
 ```
@@ -287,8 +289,82 @@ ___
 
 
 ## 8 链接
-> 2025年8月19日：好困，先午休
+Markdown链接有三部分内容组成：  
+**显示文本**（放在中括号`[]`内）、**链接地址**（放在圆括号`()`内）、（可选）**标题文本**（放在链接地址后的引号内）。    
+超链接Markdown代码：`[链接显示名](链接地址 "链接title")`
 
+- 基本语法
+```
+[Markdown学习](https://github.com/MoyeeHo/Learning-materials/blob/main/Markdown.md)
+```
+预览效果：  
+
+[Markdown学习](https://github.com/MoyeeHo/Learning-materials/blob/main/Markdown.md)
+  
+- 带标题文本链接
+```
+[Markdown学习](https://github.com/MoyeeHo/Learning-materials/blob/main/Markdown.md "Markdown学习")
+```
+预览效果：  
+
+[Markdown学习](https://github.com/MoyeeHo/Learning-materials/blob/main/Markdown.md "Title：Markdown学习")    
+  （将鼠标悬停在链接上可查看标题文本）
+  
+- 自动连接（网址和Email）
+```
+我的主页
+<https://github.com/MoyeeHo>
+
+联系邮箱
+<hmoyee@163.com>
+```
+预览效果：  
+
+我的主页  
+<https://github.com/MoyeeHo>
+
+联系邮箱  
+<hmoyee@163.com>
+  
+- 带格式的链接
+  
+  如果需要强调链接，则在链接前后增加强调符号**[2 字体使用](#2-字体使用)**  
+```
+  It's my Github homepage **[MoyeeHo](https://github.com/MoyeeHo)**.
+  
+  This is the _[Markdown Guide](https://github.com/MoyeeHo/Learning-materials/blob/main/Markdown.md "Markdown学习")_.
+  
+  See the section on[`code`](#code)
+```
+预览效果：  
+
+  It's my Github homepage **[MoyeeHo](https://github.com/MoyeeHo)**.
+  
+  This is the _[Markdown Guide](https://github.com/MoyeeHo/Learning-materials/blob/main/Markdown.md "Markdown学习")_.
+  
+  See the section on[`code`](#code)
+
+## 9 表格
+Markdown中表格使用`|`来分隔不同单元格，使用三个或多个`-`来分割表头和其他行。对齐方式可通过分割线中添加`:`指定。
+
+对齐：  
+`:-`表示表头及单元格内容左对齐；  
+`-:`表示表头及单元格内容右对齐；  
+`:-:`表示表头及单元格内容居中对齐。
+
+注：表格中不能添加标题、块引用、列表、水平规则、图像或HTML标签。
+
+```
+| Title 1      | Title 2       |  Title 3    |
+| :-----       | :-----------: |-----------: |
+|  Header      |   Title       | Here's this |
+|  Paragraph   |   Text        | And more    |
+```
+预览效果：  
+| Title 1      | Title 2 |  Title 3 |
+| :----- | :-----------: |-----------: |
+|  Header      |   Title       | Here's this   |
+|  Paragraph   |   Text        | And more      |
 
 
 
