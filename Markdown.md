@@ -368,10 +368,50 @@ Markdown中表格使用`|`来分隔不同单元格，使用三个或多个`-`来
 
 
 ## 10 图片
-添加图片，需要再前面添加感叹号`!`，感叹号后则采用链接方式添加连接。
+在Markdown中添加图片，需要在标准链接语法前添加感叹号`!`，完整图片语法包括以下部分：
 
 感叹号`!`、**显示文本**（放在中括号`[]`内）、**链接地址**（放在圆括号`()`内）、（可选）**标题文本**（放在链接地址后的引号内）。    
 插入图片Markdown代码：`![图片显示名](图片地址 "图片title")`
+
+```
+![图片描述](图片地址：本地连接或URL "图片title")
+![Sunset](https://github.com/MoyeeHo/Learning-materials/blob/main/sunset.jpg "而面对夕阳，希望你回到今天")
+```
+
+预览效果：  
+![Sunset](https://github.com/MoyeeHo/Learning-materials/blob/main/sunset.jpg "而面对夕阳，希望你回到今天")
+
+
+**图片也可修改大小**
+
+```
+![图片描述](图片地址：本地连接或URL#pic_center =长x宽 "图片title")  
+![The devil makes no promises](https://github.com/MoyeeHo/Learning-materials/blob/main/The devil makes no promises.jpg#pic_center =790x593 "仅做学习用途使用，侵权必删")
+
+注：①等号前面有空格；②这里是x不是*；③此功能在Github上无法展示。
+```
+
+## 11 脚注
+脚注用于为文档添加补充说明和参考文献，使正文内容保持简洁清晰。添加脚注后，正文会出现一个带数字的上标标识，读者点击该标识可跳转至页面底部脚注内容。查看完脚注后，可通过点击脚注后的返回链接跳转回原文位置。
+```
+使用Markdown[^1]可以效率的书写文档，直接转换成HTML[^2]，也可使用Typora[^T]编辑器进行书写。
+[^1]:Markdown是一种纯文本标记语言.
+[^2]:HtoerText Markup Language 超文本标记语言
+[^T]:NEW WAY TO READ & WRITE MARKDOWN.
+```
+
+预览效果：  
+使用Markdown[^1]可以效率的书写文档，直接转换成HTML[^2]，也可使用Typora[^T]编辑器进行书写。
+
+> 脚注内容在文章末尾，跳转后按脚注后方链接可直接跳转回加注位置。
+
+## 12 转义字符
+
+## 13 内嵌HTML标签
+
+
+
+
 
 
 
@@ -379,7 +419,9 @@ Markdown中表格使用`|`来分隔不同单元格，使用三个或多个`-`来
 
 
 
-
+[^1]:Markdown是一种纯文本标记语言.
+[^2]:HtoerText Markup Language 超文本标记语言
+[^T]:NEW WAY TO READ & WRITE MARKDOWN.
 
 
 
