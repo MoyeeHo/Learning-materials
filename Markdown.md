@@ -195,6 +195,8 @@ Markdown换行方法
 > 2025年8月14日，由于还没学到代码块和插入图片，因此稍后更新。
 >
 > 2025年8月18日：代码块内容更新，建议先学习**[6 代码块](#6-代码块)**章节，再继续后续内容。
+>
+> 2025年8月26日：图片更新，建议先学习**[10 图片](#10-图片)**章节，再继续后续内容。
 
 **代码块**
 
@@ -219,8 +221,18 @@ Markdown换行方法
 3. Update the title to match the name of your website.
 
 **图片**
+```
+1. Open the photo.
+2. She is Sophie.
+  ![Sophie](https://github.com/MoyeeHo/Learning-materials/blob/main/I%20want%20to%20be%20your%20rock.jpg "I want to be your rock")
+3. Close the photo.
+```
 
-
+预览效果：  
+1. Open the photo.
+2. She is Sophie.
+  ![Sophie](https://github.com/MoyeeHo/Learning-materials/blob/main/I%20want%20to%20be%20your%20rock.jpg "I want to be your rock")
+3. Close the photo.
 
 ## 6 代码块
 Markdown支持两种类型代码块：  
@@ -406,6 +418,26 @@ Markdown中表格使用`|`来分隔不同单元格，使用三个或多个`-`来
 > 脚注内容在文章末尾，跳转后按脚注后方链接可直接跳转回加注位置。
 
 ## 12 转义字符
+在Markdown中，如需显示语法符号本身，而非触发其格式功能，可在符号前添加反斜线`\`进行转义。
+
+可转义字符：  
+|符号|名称|转义写法|
+|:------:|:------:|:------:|
+| \ |反斜杠|\\|
+|`|反引号|\`|
+|*|星号|*\|
+|_|下划线|\_|
+|{}|花括号|\{\}|
+|[]|中括号|\[\]|
+|()|括号|\(\)|
+|#|井号|\#|
+|+|加号|\+|
+|-|减号|\-|
+|.|点|\.|
+|!|感叹号|\!|
+|\||竖线|\||
+
+> 还会有一些特殊字符的转义`<`和`&`，用于html文件中。
 
 ## 13 内嵌HTML标签
 
