@@ -64,7 +64,7 @@ Markdown换行方法
 ## 4 引用
 引用方法有普通引用、多段落模块引用、嵌套块引用，在文字前添加`>`即可引用，且`>`后的空格可有可无。
 
-**1. 普通的文字引用**
+### 4.1 普通的文字引用
 ```
 > 普通文字引用
 ```
@@ -72,7 +72,7 @@ Markdown换行方法
 预览效果：  
 > 普通文字引用
   
-**2. 多段落引用**
+### 4.2 多段落引用
 ```
 > 多段落引用
  
@@ -88,7 +88,7 @@ Markdown换行方法
 > 
 > 第二段
 
-**3. 嵌套块引用**
+### 4.3 嵌套块引用
 ```
 > 引用：
  
@@ -110,7 +110,7 @@ Markdown换行方法
 
 注意：若要控制层级，可在列表符号前使用`Tab`。
 
-**无序列表**
+### 5.1 无序列表
 ```
 * 无序list 1
 + 无序list 2
@@ -126,7 +126,7 @@ Markdown换行方法
   - 无序list 2.2
 - 无序list 3
 
-**有序列表**
+### 5.2 有序列表
 
 ```
 1. 有序list 1
@@ -143,7 +143,7 @@ Markdown换行方法
     2. 有序list 2.2
 3. 有序list 3
 
-**在列表中嵌套其他元素**
+### 5.3 在列表中嵌套其他元素
 
 **段落**
 
@@ -161,7 +161,7 @@ Markdown换行方法
   I need to add another paragraph below the second list item.
 - And here's the third list item.
 
-**引用块**
+### 5.4 引用块
 ```
 - This is the first list item.
 - Here's the second list item.
@@ -175,7 +175,7 @@ Markdown换行方法
   > A blockquote would look great below the second list item.
 - And here's the third list item.
 
-**列表**
+### 5.5 列表
 ```
 1. First item
 2. Second item
@@ -198,7 +198,7 @@ Markdown换行方法
 >
 > 2025年8月26日：图片更新，建议先学习**[10 图片](#10-图片)**章节，再继续后续内容。
 
-**代码块**
+### 5.6 代码块
 
 代码块通常采用四个空格或一个制表符缩进。当他们被放入列表里时，请将他们缩进八个空格、两个制表符或用围栏代码块。
 ~~~
@@ -220,7 +220,7 @@ Markdown换行方法
    ```
 3. Update the title to match the name of your website.
 
-**图片**
+### 5.7 图片
 ```
 1. Open the photo.
 2. She is Sophie.
@@ -239,14 +239,14 @@ Markdown支持两种类型代码块：
 1、行内代码，使用一个反引号包裹代码内容 \` ；  
 2、围栏代码块，使用三个反引号```或波浪号~~~包裹多行代码。
 
-1. 行内代码块
+### 6.1 行内代码块
 ```
 `Hello` World!
 ```
 预览效果：
 `Hello` World!
 
-2.围栏代码块
+### 6.2 围栏代码块
 ~~~
 ```python
   def main():
@@ -305,7 +305,7 @@ Markdown链接有三部分内容组成：
 **显示文本**（放在中括号`[]`内）、**链接地址**（放在圆括号`()`内）、（可选）**标题文本**（放在链接地址后的引号内）。    
 超链接Markdown代码：`[链接显示名](链接地址 "链接title")`
 
-- 基本语法
+### 8.1 基本语法
 ```
 [Markdown学习](https://github.com/MoyeeHo/Learning-materials/blob/main/Markdown.md)
 ```
@@ -313,7 +313,7 @@ Markdown链接有三部分内容组成：
 
 [Markdown学习](https://github.com/MoyeeHo/Learning-materials/blob/main/Markdown.md)
   
-- 带标题文本链接
+### 8.2 带标题文本链接
 ```
 [Markdown学习](https://github.com/MoyeeHo/Learning-materials/blob/main/Markdown.md "Markdown学习")
 ```
@@ -322,7 +322,7 @@ Markdown链接有三部分内容组成：
 [Markdown学习](https://github.com/MoyeeHo/Learning-materials/blob/main/Markdown.md "Title：Markdown学习")    
   （将鼠标悬停在链接上可查看标题文本）
   
-- 自动连接（网址和Email）
+### 8.3 自动连接（网址和Email）
 ```
 我的主页
 <https://github.com/MoyeeHo>
@@ -338,7 +338,7 @@ Markdown链接有三部分内容组成：
 联系邮箱  
 <hmoyee@163.com>
   
-- 带格式的链接
+### 8.4 带格式的链接
   
   如果需要强调链接，则在链接前后增加强调符号**[2 字体使用](#2-字体使用)**  
 ```
@@ -420,6 +420,26 @@ Markdown中表格使用`|`来分隔不同单元格，使用三个或多个`-`来
 ## 12 转义字符
 在Markdown中，如需显示语法符号本身，而非触发其格式功能，可在符号前添加反斜线`\`进行转义。
 
+> 由于在表格中无法显示出来，我在代码块里展示好了。
+```
+|符号|名称|转义写法|
+|:------:|:------:|:------:|
+| \      |反斜杠   |\\      |
+|`       |反引号   |\`      |
+|*       |星号     |*\      |
+|_       |下划线   |\_      |
+|{}      |花括号   |\{\}    |
+|[]      |中括号   |\[\]    |
+|()      |括号     |\(\)    |
+|#       |井号     |\#      |
+|+       |加号     |\+      |
+|-       |减号     |\-      |
+|.       |点       |\.      |
+|!       |感叹号   |\!       |
+|\|      |竖线    |\|       |
+```
+
+
 可转义字符：  
 |符号|名称|转义写法|
 |:------:|:------:|:------:|
@@ -439,7 +459,8 @@ Markdown中表格使用`|`来分隔不同单元格，使用三个或多个`-`来
 
 > 还会有一些特殊字符的转义`<`和`&`，用于html文件中。
 
-## 13 内嵌HTML标签
+# Markdown高级语法
+## 1 内嵌HTML标签
 对于MARKDOWN涵盖范围之外的标签，都可以直接在文件里面用html本身。如需使用html，不需要额外标注这是html或MARKDOWN，只需要html标签添加到MARKDOWN文本中即可。
 
 
