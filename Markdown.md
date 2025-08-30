@@ -387,11 +387,11 @@ Markdown中表格使用`|`来分隔不同单元格，使用三个或多个`-`来
 
 ```
 ![图片描述](图片地址：本地连接或URL "图片title")
-![Sunset](https://github.com/MoyeeHo/Learning-materials/blob/main/sunset.jpg "而面对夕阳，希望你回到今天")
+![Sunset](https://github.com/MoyeeHo/Learning-materials/blob/main/Material/sunset.jpg "而面对夕阳，希望你回到今天")
 ```
 
 预览效果：  
-![Sunset](https://github.com/MoyeeHo/Learning-materials/blob/main/sunset.jpg "而面对夕阳，希望你回到今天")
+![Sunset](https://github.com/MoyeeHo/Learning-materials/blob/main/Material/sunset.jpg "而面对夕阳，希望你回到今天")
 
 
 **图片也可修改大小**
@@ -461,17 +461,70 @@ Markdown中表格使用`|`来分隔不同单元格，使用三个或多个`-`来
 
 # Markdown高级语法
 ## 1 内嵌HTML标签
-对于MARKDOWN涵盖范围之外的标签，都可以直接在文件里面用html本身。如需使用html，不需要额外标注这是html或MARKDOWN，只需要html标签添加到MARKDOWN文本中即可。
+对于Markdown语法未涵盖的格式或样式，可以在文档中使用Html标签来实现。如需使用html，不需要额外标注这是html或MARKDOWN，只需要html标签添加到MARKDOWN文本中即可。
+> github上有些格式无法展示，需要在特定软件打开才可看到相应格式的预览。
 
 ### 2.1 行级内联标签
-MARKDOWN与HTML是可互补。二者结合为此提供了更大的灵活性和控制力，尤其是MARKDOWN无法满足需求时。
+Markdown与Html是可互补的，二者结合使用为此提供了更大的灵活性和控制力，尤其是MARKDOWN无法满足需求时。  
+诸如标题、换行、强调等格式，二者的语法都可使用。
 
-HTML的行级内联标签如`<span>`、`<cite>`、`<del>`不受限制，可以再MARKDOWN段落、列表或标题随意使用。依照个人习惯也可采用HTML标签格式化。如，`<a>`、`<img>`标签，可直接使用这些标签，而不使用MARKDOWN提供的链接或图片语法。当你需要更改元素属性时，如文本指定颜色或图片宽度，使用HTML标签会更方便些。
+HTML的行级内联标签（如`<span>`、`<cite>`、`<del>`）不受限制，可以在MARKDOWN的段落、列表或标题自由使用。依照个人习惯也可采用HTML标签格式化。如，`<a>`、`<img>`标签，可直接使用这些标签，而不使用MARKDOWN提供的链接或图片语法。当需要调整元素的属性时，如文本指定颜色或图片宽度，使用HTML标签会更方便些。
 
-HTML行级内联标签和区块标签不同，在内联标签的范围内，MARKDOWN的语法是可以解析的。
+> HTML的行级内联标签和区块标签有所不同：在行级标签内部，MARKDOWN的语法是可以解析的。
 
+```
+这是一个MARKDOWN段落，但我可用HTML来给某个词<span style="color:red">标红</span>，也可以<span style="background-color:yello">高亮文本</span>，或者标记一个<cite>书名</cite>，甚至可以<del>删除这句话</del>.  
+This <strong>world</strong> is bold. This <em>world</em> is italic.
+```
+预览效果：  
+这是一个MARKDOWN段落，但我可用HTML来给某个词<span style="color:red">标红</span>，也可以<span style="background-color:yello">高亮文本</span>，或者标记一个<cite>书名</cite>，甚至可以<del>删除这句话</del>.  
+This <strong>world</strong> is bold. This <em>world</em> is italic.
+> 再次提醒：github上有些格式无法展示，需要在特定软件打开才可看到相应格式的预览。
 
+### 2.2 区块标签
 
+在Markdown中使用Html区块元素（如`<div>`、`<table>`、`<pre>`、`<p>`）等，为了确保样式与解析的正确性，应注意一下格式规范：
+- 每个区块元素前后需保留一个空行；
+- 开始与结尾标签，不应**Tab或空格来缩进**。
+
+Markdown会自动识别这些Html区块元素，并不会在其外部额外包括<p>标签，从而避免破坏预期的html结构。
+
+如，在Markdown文件中增加Html表格：
+
+```
+This is a paragraph.
+
+<table>
+    <tr>
+      <th>A</th>
+      <th>B</th>
+    </tr>
+    <tr>
+      <td>a</td>
+      <td>b</td>
+    </tr>
+</table>
+
+This is another paragraph.
+```
+
+浏览效果：  
+This is a regular paragraph.
+
+<table>
+    <tr>
+      <th>A</th>
+      <th>B</th>
+    </tr>
+    <tr>
+      <td>a</td>
+      <td>b</td>
+    </tr>
+</table>
+
+This is another regular paragraph.
+
+> 2025年8月30日11:08:16：更新了html标签块，下午我要出去玩啦！！！
 
 
 
