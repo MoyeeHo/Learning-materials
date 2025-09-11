@@ -224,14 +224,14 @@ Markdown换行方法
 ```
 1. Open the photo.
 2. She is Sophie.
-  ![Sophie](https://github.com/MoyeeHo/Learning-materials/blob/main/I%20want%20to%20be%20your%20rock.jpg "I want to be your rock")
+  ![Sophie](https://github.com/MoyeeHo/Learning-materials/blob/main/Material/I%20want%20to%20be%20your%20rock.jpg?raw=true "I want to be your rock")
 3. Close the photo.
 ```
 
 预览效果：  
 1. Open the photo.
 2. She is Sophie.
-  ![Sophie](https://github.com/MoyeeHo/Learning-materials/blob/main/I%20want%20to%20be%20your%20rock.jpg "I want to be your rock")
+  ![Sophie](https://github.com/MoyeeHo/Learning-materials/blob/main/Material/I%20want%20to%20be%20your%20rock.jpg?raw=true "I want to be your rock")
 3. Close the photo.
 
 ## 6 代码块
@@ -387,18 +387,18 @@ Markdown中表格使用`|`来分隔不同单元格，使用三个或多个`-`来
 
 ```
 ![图片描述](图片地址：本地连接或URL "图片title")
-![Sunset](https://github.com/MoyeeHo/Learning-materials/blob/main/Material/sunset.jpg "而面对夕阳，希望你回到今天")
+![Sunset](https://github.com/MoyeeHo/Learning-materials/blob/main/Material/sunset.jpg?raw=true "而面对夕阳，希望你回到今天")
 ```
 
 预览效果：  
-![Sunset](https://github.com/MoyeeHo/Learning-materials/blob/main/Material/sunset.jpg "而面对夕阳，希望你回到今天")
+![Sunset](https://github.com/MoyeeHo/Learning-materials/blob/main/Material/sunset.jpg?raw=true "而面对夕阳，希望你回到今天")
 
 
 **图片也可修改大小**
 
 ```
 ![图片描述](图片地址：本地连接或URL#pic_center =长x宽 "图片title")  
-![The devil makes no promises](https://github.com/MoyeeHo/Learning-materials/blob/main/The devil makes no promises.jpg#pic_center =790x593 "仅做学习用途使用，侵权必删")
+![The devil makes no promises](https://github.com/MoyeeHo/Learning-materials/blob/main/Material/The%20devil%20makes%20no%20promises.jpg?raw=true#pic_center =790x593 "仅做学习用途使用，侵权必删")
 
 注：①等号前面有空格；②这里是x不是*；③此功能在Github上无法展示。
 ```
@@ -524,7 +524,7 @@ This is a regular paragraph.
 
 This is another regular paragraph.
 
-> 2025年8月30日11:08:16：更新了html标签块，下午我要出去玩啦！！！
+
 
 
 
