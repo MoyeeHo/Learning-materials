@@ -459,21 +459,26 @@ Markdown中表格使用`|`来分隔不同单元格，使用三个或多个`-`来
 
 > 还会有一些特殊字符的转义`<`和`&`，用于html文件中。
 
-# Markdown高级语法
+# Markdown扩展用法
+
+本文介绍了Markdown的一些常用的高级语法。如需了解更多扩展语法和高级功能，可以参考以下资源：
+- [菜鸟教程: Markdown高级用法](https://www.runoob.com/markdown/md-advance.html)
+- [Markdown教程：扩展语法](https://markdown.com.cn/extended-syntax/)。
+
 ## 1 内嵌HTML标签
-对于Markdown语法未涵盖的格式或样式，可以在文档中使用Html标签来实现。如需使用html，不需要额外标注这是html或MARKDOWN，只需要html标签添加到MARKDOWN文本中即可。
+对于Markdown语法未涵盖的格式或样式，可以在文档中使用Html标签来实现。如需使用Html，不需要额外标注这是Html或Markdown，只需要Html标签添加到Markdown文本中即可。
 > github上有些格式无法展示，需要在特定软件打开才可看到相应格式的预览。
 
-### 2.1 行级内联标签
-Markdown与Html是可互补的，二者结合使用为此提供了更大的灵活性和控制力，尤其是MARKDOWN无法满足需求时。  
+### 1.1 行级内联标签
+Markdown与Html是可互补的，二者结合使用为此提供了更大的灵活性和控制力，尤其是Markdown无法满足需求时。  
 诸如标题、换行、强调等格式，二者的语法都可使用。
 
-HTML的行级内联标签（如`<span>`、`<cite>`、`<del>`）不受限制，可以在MARKDOWN的段落、列表或标题自由使用。依照个人习惯也可采用HTML标签格式化。如，`<a>`、`<img>`标签，可直接使用这些标签，而不使用MARKDOWN提供的链接或图片语法。当需要调整元素的属性时，如文本指定颜色或图片宽度，使用HTML标签会更方便些。
+Html的行级内联标签（如`<span>`、`<cite>`、`<del>`）不受限制，可以在Markdown的段落、列表或标题自由使用。依照个人习惯也可采用HTML标签格式化。如，`<a>`、`<img>`标签，可直接使用这些标签，而不使用Markdown提供的链接或图片语法。当需要调整元素的属性时，如文本指定颜色或图片宽度，使用Html标签会更方便些。
 
-> HTML的行级内联标签和区块标签有所不同：在行级标签内部，MARKDOWN的语法是可以解析的。
+> Html的行级内联标签和区块标签有所不同：在行级标签内部，Markdown的语法是可以解析的。
 
 ```
-这是一个MARKDOWN段落，但我可用HTML来给某个词<span style="color:red">标红</span>，也可以<span style="background-color:yello">高亮文本</span>，或者标记一个<cite>书名</cite>，甚至可以<del>删除这句话</del>.  
+这是一个Markdown段落，但我可用Html来给某个词<span style="color:red">标红</span>，也可以<span style="background-color:yello">高亮文本</span>，或者标记一个<cite>书名</cite>，甚至可以<del>删除这句话</del>.  
 This <strong>world</strong> is bold. This <em>world</em> is italic.
 ```
 预览效果：  
@@ -481,7 +486,7 @@ This <strong>world</strong> is bold. This <em>world</em> is italic.
 This <strong>world</strong> is bold. This <em>world</em> is italic.
 > 再次提醒：github上有些格式无法展示，需要在特定软件打开才可看到相应格式的预览。
 
-### 2.2 区块标签
+### 1.2 区块标签
 
 在Markdown中使用Html区块元素（如`<div>`、`<table>`、`<pre>`、`<p>`）等，为了确保样式与解析的正确性，应注意一下格式规范：
 - 每个区块元素前后需保留一个空行；
@@ -523,6 +528,41 @@ This is a regular paragraph.
 </table>
 
 This is another regular paragraph.
+
+
+## 2 任务列表
+任务列表可用于创建带有复选框的项目列表。在支持该功能的的Markdown应用程序中，复选框将显示在内容旁边。
+
+语法格式如下：
+
+- 破折号`-`、加号`+`或星号`*`，后接一个空格；
++ 然后加上方括号`[ ]`表示**未完成**，或`[x]`表示**已完成**。
+* 最后写入内容。
+
+```
+- [x] 已完成内容
+- [ ] 未完成内容
+```
+预览效果：  
+- [x] 已完成内容
+- [ ] 未完成内容
+
+## 3 添加Emoji表情
+若想让Markdown文本活泼起来，可直接输入Emoji（表情符号）的短码来插入Emoji。输入格式很简单：用冒号包围Emoji的名称即可。
+
+```
+这周日我要和邻居们去野餐 :camping: 啦!  
+真开心!! :joy:
+```
+预览效果：
+这周日我要和邻居们去野餐 :camping: 啦!  我是真的要去[Doge]。
+真开心!! :joy:
+
+> Tips：
+> 在github中输入一个半角的冒号`:`即可唤出表情选择框（手动查找较慢😒）。
+> 推荐使用[Emoji简码列表](https://gist.github.com/rxaviers/7360908)快速查询，或复制粘贴。
+> 不是所有平台都支持短码功能，请以实际预览效果为准。
+
 
 
 
