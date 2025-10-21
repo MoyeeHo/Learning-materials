@@ -12,5 +12,8 @@ Markdown使用方法
 ## Python
 
 ## R
+一些图的代码
+
+  [some picture](https://github.com/MoyeeHo/Learning-materials/blob/main/R/Some%20Picture.R)
 
 ## 一些代码
