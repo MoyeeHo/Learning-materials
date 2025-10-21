@@ -1,5 +1,3 @@
-# 堆叠小提琴图
-
 # 获取每个细胞群的前3个marker基因（按avg_log2FC排序），以便有备选基因
 top3_markers <- markers_label %>%
   group_by(cluster) %>%
@@ -54,6 +52,8 @@ genes_to_add <- setdiff(additional_genes, top1_unique_markers$gene)
 # 合并基因
 add_genes <- c(top1_unique_markers$gene, genes_to_add)
 
+
+# 1、堆叠小提琴图 -----
 # 小提琴图 - 每个细胞群的第一marker基因（无重复）
 p_vln <- VlnPlot(seurat_integrated,
                  features = add_genes,
@@ -78,7 +78,7 @@ ggplot2::ggsave("violin_markers.pdf",
 sorted_genes <- top1_unique_markers$gene
 cell_types_order <- unique(top1_unique_markers$cluster)
 
-# 绘制气泡图
+# 2、绘制气泡图 -----
 p_dot <- DotPlot(seurat_integrated,
                  features = add_genes,
                  cols = c("lightgrey", "red"),
@@ -99,3 +99,41 @@ print(p_dot)
 ggplot2::ggsave("dotplot_markers.pdf", 
                 plot = p_dot, 
                 height = 8, width = 12, dpi = 600)
+
+
+# 3、热图 -----
+seurat_integrated <- readRDS("seurat_integrated.rds")
+celltype_counts <- table(seurat_integrated$celltype)
+
+# 按照细胞数量从多到少排序细胞类型
+celltype_ordered <- names(sort(celltype_counts, decreasing = TRUE))
+
+# 更新因子水平，按照细胞数量排序
+seurat_integrated$celltype <- factor(seurat_integrated$celltype, levels = celltype_ordered)
+Idents(seurat_integrated) <- seurat_integrated$celltype
+
+# 重新运行FindAllMarkers，因为Idents顺序改变了
+markers_label_all <- FindAllMarkers(seurat_integrated,
+                                    only.pos = TRUE,
+                                    min.pct = 0.1,
+                                    logfc.threshold = 0.25)  # 可以调整阈值
+
+# 获取每个细胞类型的前10个marker基因
+top_10 <- as.data.frame(markers_label_all %>% 
+                          group_by(cluster) %>%
+                          top_n(n = 10, wt = avg_log2FC))
+
+# 按照细胞类型顺序排列基因
+top_10$cluster <- factor(top_10$cluster, levels = celltype_ordered)
+top_10_sorted <- top_10[order(top_10$cluster), ]
+ordered_genes <- top_10_sorted$gene
+
+# 绘制热图
+
+p <- DoHeatmap(seurat_integrated, features = top_10$gene, label = T, assay = "RNA", identity.legend = F) +
+  scale_fill_gradientn(colors = c('white', 'grey', 'firebrick3'))
+p
+
+ggplot2::ggsave("DoHeatmap_top10_label_celltype.pdf", plot = p,
+                height = 15, width = 20, dpi = 300, limitsize = FALSE)
+
