@@ -1,5 +1,5 @@
 # Learning-materials
-简单易学的Python、R、Markdown教程分享，帮助您快速入门。
+简单易学的Python、R、Markdown教程分享，帮助您快速入门。最近还学习了java基础，可以分享一下。
 
 Easy-to-learn Python, R, and Markdown tutorials to help you get started quickly.
 
@@ -10,6 +10,9 @@ Markdown使用方法
 
 
 ## Python
+
+## JAVA
+
 
 ## R
 一些图的代码
