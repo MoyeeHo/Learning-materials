@@ -12,6 +12,7 @@ Markdown使用方法
 ## Python
 
 ## JAVA
+[JAVA基础学习](https://github.com/MoyeeHo/Learning-materials/blob/main/JAVA/java%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80.md)
 
 
 ## R
